@@ -3,7 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salt Broth - Simple AI Prompts</title>
+    <title>Salt Broth - AI-Powered Creative Marketplace</title>
+    <meta name="description" content="Salt Broth is your creative AI marketplace for crafting text, creating images, and learning anything. Join our community of creators and learners.">
+    <meta name="keywords" content="AI marketplace, creative AI, text generation, image creation, learning platform">
+    <meta property="og:title" content="Salt Broth - AI-Powered Creative Marketplace">
+    <meta property="og:description" content="Your creative AI marketplace for crafting text, creating images, and learning anything.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Salt Broth">
+    <meta name="twitter:description" content="Your creative AI marketplace for crafting text, creating images, and learning anything.">
+    <link rel="canonical" href="https://saltbroth.com">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -158,76 +167,181 @@
     </style>
 </head>
 <body class="bg-black text-white">
-    <!-- Title Section -->
-    <div class="px-6 pt-24 pb-8">
-        <div class="max-w-7xl mx-auto">
+    <main class="min-h-screen flex flex-col items-center justify-center p-4 sm:p-8">
+        <!-- Title Section -->
+        <header class="text-center mb-12">
             <h1 class="text-[clamp(3rem,15vw,12rem)] font-extrabold leading-none tracking-tight text-center gradient-text glow">
                 SALT BROTH
             </h1>
-        </div>
-    </div>
+        </header>
 
-    <!-- Hero Section -->
-    <section class="px-6 pb-20">
-        <div class="max-w-3xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-medium mb-6 text-center">
-                Start using AI today, no experience needed
-            </h2>
-            <p class="text-xl text-gray-400 text-center mb-12">
-                Ready-to-use AI prompts that work like magic. Just copy, paste, and watch AI help you create amazing things.
-            </p>
-            <div class="flex justify-center">
-                <a href="#" class="premium-button inline-block px-8 py-4 text-white rounded-xl text-lg font-medium group">
-                    Let's Go! →
-                </a>
+        <!-- Hero Section -->
+        <section class="px-6 pb-20">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-medium mb-6 text-center">
+                    Start using AI today, no experience needed
+                </h2>
+                <p class="text-xl text-gray-400 text-center mb-12">
+                    Ready-to-use AI prompts that work like magic. Just copy, paste, and watch AI help you create amazing things.
+                </p>
+                <div class="flex justify-center">
+                    <a href="#" class="premium-button inline-block px-8 py-4 text-white rounded-xl text-lg font-medium group">
+                        Let's Go! →
+                    </a>
+                </div>
             </div>
+        </section>
+
+        <!-- Elegant Divider -->
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="divider"></div>
         </div>
-    </section>
 
-    <!-- Elegant Divider -->
-    <div class="max-w-6xl mx-auto px-6 py-4">
-        <div class="divider"></div>
-    </div>
-
-    <!-- Categories Section -->
-    <section class="px-6 py-20">
-        <div class="max-w-6xl mx-auto">
-            <div class="glass rounded-3xl p-6 md:p-12">
-                <!-- Tabs Navigation (Desktop) -->
-                <div class="hidden md:block relative mb-12">
-                    <div class="tabs-container">
-                        <div class="relative flex space-x-1">
-                            <button class="tab-btn active flex-1 min-w-[160px] px-8 py-6 text-white font-medium transition-all hover:text-accent-purple" data-tab="write">
-                                <div class="flex flex-col items-center gap-2">
-                                    <span class="text-lg">Craft Text</span>
-                                    <span class="text-sm text-white/50">Emails, posts</span>
-                                </div>
-                            </button>
-                            <button class="tab-btn flex-1 min-w-[160px] px-8 py-6 text-white/70 font-medium transition-all hover:text-accent-purple" data-tab="create">
-                                <div class="flex flex-col items-center gap-2">
-                                    <span class="text-lg">Create Images</span>
-                                    <span class="text-sm text-white/50">Visual content</span>
-                                </div>
-                            </button>
-                            <button class="tab-btn flex-1 min-w-[160px] px-8 py-6 text-white/70 font-medium transition-all hover:text-accent-purple" data-tab="learn">
-                                <div class="flex flex-col items-center gap-2">
-                                    <span class="text-lg">Learn Anything</span>
-                                    <span class="text-sm text-white/50">Simple guides</span>
-                                </div>
-                            </button>
-                            <div class="tab-indicator" style="width: 33.333%; left: 0;"></div>
+        <!-- Categories Section -->
+        <section class="px-6 py-20">
+            <div class="max-w-6xl mx-auto">
+                <div class="glass rounded-3xl p-6 md:p-12">
+                    <!-- Tabs Navigation (Desktop) -->
+                    <div class="hidden md:block relative mb-12">
+                        <div class="tabs-container">
+                            <div class="relative flex space-x-1">
+                                <button class="tab-btn active flex-1 min-w-[160px] px-8 py-6 text-white font-medium transition-all hover:text-accent-purple" data-tab="write">
+                                    <div class="flex flex-col items-center gap-2">
+                                        <span class="text-lg">Craft Text</span>
+                                        <span class="text-sm text-white/50">Emails, posts</span>
+                                    </div>
+                                </button>
+                                <button class="tab-btn flex-1 min-w-[160px] px-8 py-6 text-white/70 font-medium transition-all hover:text-accent-purple" data-tab="create">
+                                    <div class="flex flex-col items-center gap-2">
+                                        <span class="text-lg">Create Images</span>
+                                        <span class="text-sm text-white/50">Visual content</span>
+                                    </div>
+                                </button>
+                                <button class="tab-btn flex-1 min-w-[160px] px-8 py-6 text-white/70 font-medium transition-all hover:text-accent-purple" data-tab="learn">
+                                    <div class="flex flex-col items-center gap-2">
+                                        <span class="text-lg">Learn Anything</span>
+                                        <span class="text-sm text-white/50">Simple guides</span>
+                                    </div>
+                                </button>
+                                <div class="tab-indicator" style="width: 33.333%; left: 0;"></div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Mobile Stacked Layout -->
-                <div class="mobile-stack md:hidden">
-                    <div class="mobile-section" id="write-mobile">
-                        <div class="mobile-section-header">
-                            <h3 class="text-lg font-medium text-white">Craft Text</h3>
-                            <p class="text-sm text-white/50">Emails, posts</p>
+                    <!-- Mobile Stacked Layout -->
+                    <div class="mobile-stack md:hidden">
+                        <div class="mobile-section" id="write-mobile">
+                            <div class="mobile-section-header">
+                                <h3 class="text-lg font-medium text-white">Craft Text</h3>
+                                <p class="text-sm text-white/50">Emails, posts</p>
+                            </div>
+                            <div class="write-content">
+                                <div class="grid md:grid-cols-2 gap-16">
+                                    <div class="space-y-8">
+                                        <span class="inline-block px-4 py-1.5 bg-accent-purple/10 rounded-full text-sm font-medium text-accent-purple tracking-wide">Writing Assistant</span>
+                                        <h3 class="text-4xl font-semibold gradient-text leading-tight">Turn your ideas into engaging writing</h3>
+                                        <p class="text-xl text-gray-400 leading-relaxed">Perfect for emails, social posts, or your next blog entry. No writing experience needed!</p>
+                                        <div class="pt-4">
+                                            <a href="#" class="premium-button inline-flex items-center px-8 py-4 text-white rounded-xl font-medium group">
+                                                <span class="mr-3">Try writing prompts</span>
+                                                <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="example-box rounded-2xl p-10">
+                                        <div class="space-y-6">
+                                            <div class="flex items-center space-x-3">
+                                                <div class="w-2 h-2 rounded-full bg-accent-purple/30"></div>
+                                                <p class="text-sm font-medium uppercase tracking-wider text-accent-purple/40">Example prompt</p>
+                                            </div>
+                                            <div class="space-y-4">
+                                                <p class="text-xl font-medium text-white/90">"Write a compelling email about [topic] that's friendly and professional."</p>
+                                                <p class="text-sm text-accent-purple/50">Perfect for: Business communication, Team updates, Client outreach</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="write-content">
+                        
+                        <div class="mobile-section" id="create-mobile">
+                            <div class="mobile-section-header">
+                                <h3 class="text-lg font-medium text-white">Create Images</h3>
+                                <p class="text-sm text-white/50">Visual content</p>
+                            </div>
+                            <div class="create-content">
+                                <div class="grid md:grid-cols-2 gap-16">
+                                    <div class="space-y-8">
+                                        <span class="inline-block px-4 py-1.5 bg-accent-blue/10 rounded-full text-sm font-medium text-accent-blue tracking-wide">Image Creation</span>
+                                        <h3 class="text-4xl font-semibold gradient-text leading-tight">Create stunning images instantly</h3>
+                                        <p class="text-xl text-gray-400 leading-relaxed">Just describe what you want to see, and watch as AI brings your vision to life.</p>
+                                        <div class="pt-4">
+                                            <a href="#" class="premium-button inline-flex items-center px-8 py-4 text-white rounded-xl font-medium group">
+                                                <span class="mr-3">Try image prompts</span>
+                                                <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="example-box rounded-2xl p-10">
+                                        <div class="space-y-6">
+                                            <div class="flex items-center space-x-3">
+                                                <div class="w-2 h-2 rounded-full bg-accent-blue/30"></div>
+                                                <p class="text-sm font-medium uppercase tracking-wider text-accent-blue/40">Example prompt</p>
+                                            </div>
+                                            <div class="space-y-4">
+                                                <p class="text-xl font-medium text-white/90">"Create a colorful illustration of a [subject] in a [style] style."</p>
+                                                <p class="text-sm text-accent-blue/50">Perfect for: Social media, Blog posts, Presentations</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mobile-section" id="learn-mobile">
+                            <div class="mobile-section-header">
+                                <h3 class="text-lg font-medium text-white">Learn Anything</h3>
+                                <p class="text-sm text-white/50">Simple guides</p>
+                            </div>
+                            <div class="learn-content">
+                                <div class="grid md:grid-cols-2 gap-16">
+                                    <div class="space-y-8">
+                                        <span class="inline-block px-4 py-1.5 bg-accent-pink/10 rounded-full text-sm font-medium text-accent-pink tracking-wide">Learning Guide</span>
+                                        <h3 class="text-4xl font-semibold gradient-text leading-tight">Understand any topic easily</h3>
+                                        <p class="text-xl text-gray-400 leading-relaxed">Get friendly explanations that make complex topics simple to understand.</p>
+                                        <div class="pt-4">
+                                            <a href="#" class="premium-button inline-flex items-center px-8 py-4 text-white rounded-xl font-medium group">
+                                                <span class="mr-3">Try learning prompts</span>
+                                                <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="example-box rounded-2xl p-10">
+                                        <div class="space-y-6">
+                                            <div class="flex items-center space-x-3">
+                                                <div class="w-2 h-2 rounded-full bg-accent-pink/30"></div>
+                                                <p class="text-sm font-medium uppercase tracking-wider text-accent-pink/40">Example prompt</p>
+                                            </div>
+                                            <div class="space-y-4">
+                                                <p class="text-xl font-medium text-white/90">"Explain [topic] in simple terms, as if you're teaching a beginner."</p>
+                                                <p class="text-sm text-accent-pink/50">Perfect for: Students, Self-learning, Teaching others</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tab Content (Desktop) -->
+                    <div class="hidden md:block">
+                        <div id="write" class="tab-content active">
                             <div class="grid md:grid-cols-2 gap-16">
                                 <div class="space-y-8">
                                     <span class="inline-block px-4 py-1.5 bg-accent-purple/10 rounded-full text-sm font-medium text-accent-purple tracking-wide">Writing Assistant</span>
@@ -256,14 +370,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    
-                    <div class="mobile-section" id="create-mobile">
-                        <div class="mobile-section-header">
-                            <h3 class="text-lg font-medium text-white">Create Images</h3>
-                            <p class="text-sm text-white/50">Visual content</p>
-                        </div>
-                        <div class="create-content">
+                        <div id="create" class="tab-content">
                             <div class="grid md:grid-cols-2 gap-16">
                                 <div class="space-y-8">
                                     <span class="inline-block px-4 py-1.5 bg-accent-blue/10 rounded-full text-sm font-medium text-accent-blue tracking-wide">Image Creation</span>
@@ -292,14 +399,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    
-                    <div class="mobile-section" id="learn-mobile">
-                        <div class="mobile-section-header">
-                            <h3 class="text-lg font-medium text-white">Learn Anything</h3>
-                            <p class="text-sm text-white/50">Simple guides</p>
-                        </div>
-                        <div class="learn-content">
+                        <div id="learn" class="tab-content">
                             <div class="grid md:grid-cols-2 gap-16">
                                 <div class="space-y-8">
                                     <span class="inline-block px-4 py-1.5 bg-accent-pink/10 rounded-full text-sm font-medium text-accent-pink tracking-wide">Learning Guide</span>
@@ -330,176 +430,84 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <!-- Tab Content (Desktop) -->
-                <div class="hidden md:block">
-                    <div id="write" class="tab-content active">
-                        <div class="grid md:grid-cols-2 gap-16">
-                            <div class="space-y-8">
-                                <span class="inline-block px-4 py-1.5 bg-accent-purple/10 rounded-full text-sm font-medium text-accent-purple tracking-wide">Writing Assistant</span>
-                                <h3 class="text-4xl font-semibold gradient-text leading-tight">Turn your ideas into engaging writing</h3>
-                                <p class="text-xl text-gray-400 leading-relaxed">Perfect for emails, social posts, or your next blog entry. No writing experience needed!</p>
-                                <div class="pt-4">
-                                    <a href="#" class="premium-button inline-flex items-center px-8 py-4 text-white rounded-xl font-medium group">
-                                        <span class="mr-3">Try writing prompts</span>
-                                        <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="example-box rounded-2xl p-10">
-                                <div class="space-y-6">
-                                    <div class="flex items-center space-x-3">
-                                        <div class="w-2 h-2 rounded-full bg-accent-purple/30"></div>
-                                        <p class="text-sm font-medium uppercase tracking-wider text-accent-purple/40">Example prompt</p>
-                                    </div>
-                                    <div class="space-y-4">
-                                        <p class="text-xl font-medium text-white/90">"Write a compelling email about [topic] that's friendly and professional."</p>
-                                        <p class="text-sm text-accent-purple/50">Perfect for: Business communication, Team updates, Client outreach</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        <!-- Footer -->
+        <footer class="px-6 py-12 md:py-20 border-t border-white/10">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+                    <div class="col-span-2 md:col-span-1 space-y-4">
+                        <h3 class="text-lg font-semibold gradient-text">Salt Broth</h3>
+                        <p class="text-sm text-gray-400">Empowering everyone to use AI confidently and effectively.</p>
                     </div>
-                    <div id="create" class="tab-content">
-                        <div class="grid md:grid-cols-2 gap-16">
-                            <div class="space-y-8">
-                                <span class="inline-block px-4 py-1.5 bg-accent-blue/10 rounded-full text-sm font-medium text-accent-blue tracking-wide">Image Creation</span>
-                                <h3 class="text-4xl font-semibold gradient-text leading-tight">Create stunning images instantly</h3>
-                                <p class="text-xl text-gray-400 leading-relaxed">Just describe what you want to see, and watch as AI brings your vision to life.</p>
-                                <div class="pt-4">
-                                    <a href="#" class="premium-button inline-flex items-center px-8 py-4 text-white rounded-xl font-medium group">
-                                        <span class="mr-3">Try image prompts</span>
-                                        <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="example-box rounded-2xl p-10">
-                                <div class="space-y-6">
-                                    <div class="flex items-center space-x-3">
-                                        <div class="w-2 h-2 rounded-full bg-accent-blue/30"></div>
-                                        <p class="text-sm font-medium uppercase tracking-wider text-accent-blue/40">Example prompt</p>
-                                    </div>
-                                    <div class="space-y-4">
-                                        <p class="text-xl font-medium text-white/90">"Create a colorful illustration of a [subject] in a [style] style."</p>
-                                        <p class="text-sm text-accent-blue/50">Perfect for: Social media, Blog posts, Presentations</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="space-y-4">
+                        <h4 class="text-sm font-medium text-white/80">Resources</h4>
+                        <ul class="space-y-3">
+                            <li><a href="#" class="text-sm text-gray-400 hover:text-accent-purple transition-colors">Documentation</a></li>
+                            <li><a href="#" class="text-sm text-gray-400 hover:text-accent-purple transition-colors">Examples</a></li>
+                            <li><a href="#" class="text-sm text-gray-400 hover:text-accent-purple transition-colors">Tutorials</a></li>
+                        </ul>
                     </div>
-                    <div id="learn" class="tab-content">
-                        <div class="grid md:grid-cols-2 gap-16">
-                            <div class="space-y-8">
-                                <span class="inline-block px-4 py-1.5 bg-accent-pink/10 rounded-full text-sm font-medium text-accent-pink tracking-wide">Learning Guide</span>
-                                <h3 class="text-4xl font-semibold gradient-text leading-tight">Understand any topic easily</h3>
-                                <p class="text-xl text-gray-400 leading-relaxed">Get friendly explanations that make complex topics simple to understand.</p>
-                                <div class="pt-4">
-                                    <a href="#" class="premium-button inline-flex items-center px-8 py-4 text-white rounded-xl font-medium group">
-                                        <span class="mr-3">Try learning prompts</span>
-                                        <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="example-box rounded-2xl p-10">
-                                <div class="space-y-6">
-                                    <div class="flex items-center space-x-3">
-                                        <div class="w-2 h-2 rounded-full bg-accent-pink/30"></div>
-                                        <p class="text-sm font-medium uppercase tracking-wider text-accent-pink/40">Example prompt</p>
-                                    </div>
-                                    <div class="space-y-4">
-                                        <p class="text-xl font-medium text-white/90">"Explain [topic] in simple terms, as if you're teaching a beginner."</p>
-                                        <p class="text-sm text-accent-pink/50">Perfect for: Students, Self-learning, Teaching others</p>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="space-y-4">
+                        <h4 class="text-sm font-medium text-white/80">Company</h4>
+                        <ul class="space-y-3">
+                            <li><a href="#" class="text-sm text-gray-400 hover:text-accent-purple transition-colors">About</a></li>
+                            <li><a href="#" class="text-sm text-gray-400 hover:text-accent-purple transition-colors">Blog</a></li>
+                            <li><a href="#" class="text-sm text-gray-400 hover:text-accent-purple transition-colors">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="space-y-4">
+                        <h4 class="text-sm font-medium text-white/80">Legal</h4>
+                        <ul class="space-y-3">
+                            <li><a href="#" class="text-sm text-gray-400 hover:text-accent-purple transition-colors">Privacy</a></li>
+                            <li><a href="#" class="text-sm text-gray-400 hover:text-accent-purple transition-colors">Terms</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-12 pt-8 border-t border-white/10">
+                    <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+                        <p class="text-sm text-gray-400">&copy; 2025 Salt Broth. All rights reserved.</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-400 hover:text-accent-purple transition-colors">
+                                <span class="sr-only">Twitter</span>
+                                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-accent-purple transition-colors">
+                                <span class="sr-only">GitHub</span>
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0122 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path></svg>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </footer>
 
-    <!-- Footer -->
-    <footer class="px-6 py-12 md:py-20 border-t border-white/10">
-        <div class="max-w-6xl mx-auto">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
-                <div class="col-span-2 md:col-span-1 space-y-4">
-                    <h3 class="text-lg font-semibold gradient-text">Salt Broth</h3>
-                    <p class="text-sm text-gray-400">Empowering everyone to use AI confidently and effectively.</p>
-                </div>
-                <div class="space-y-4">
-                    <h4 class="text-sm font-medium text-white/80">Resources</h4>
-                    <ul class="space-y-3">
-                        <li><a href="#" class="text-sm text-gray-400 hover:text-accent-purple transition-colors">Documentation</a></li>
-                        <li><a href="#" class="text-sm text-gray-400 hover:text-accent-purple transition-colors">Examples</a></li>
-                        <li><a href="#" class="text-sm text-gray-400 hover:text-accent-purple transition-colors">Tutorials</a></li>
-                    </ul>
-                </div>
-                <div class="space-y-4">
-                    <h4 class="text-sm font-medium text-white/80">Company</h4>
-                    <ul class="space-y-3">
-                        <li><a href="#" class="text-sm text-gray-400 hover:text-accent-purple transition-colors">About</a></li>
-                        <li><a href="#" class="text-sm text-gray-400 hover:text-accent-purple transition-colors">Blog</a></li>
-                        <li><a href="#" class="text-sm text-gray-400 hover:text-accent-purple transition-colors">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="space-y-4">
-                    <h4 class="text-sm font-medium text-white/80">Legal</h4>
-                    <ul class="space-y-3">
-                        <li><a href="#" class="text-sm text-gray-400 hover:text-accent-purple transition-colors">Privacy</a></li>
-                        <li><a href="#" class="text-sm text-gray-400 hover:text-accent-purple transition-colors">Terms</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="mt-12 pt-8 border-t border-white/10">
-                <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
-                    <p class="text-sm text-gray-400">&copy; 2025 Salt Broth. All rights reserved.</p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-accent-purple transition-colors">
-                            <span class="sr-only">Twitter</span>
-                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-accent-purple transition-colors">
-                            <span class="sr-only">GitHub</span>
-                            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0122 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path></svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const tabs = document.querySelectorAll('.tab-btn');
+                const contents = document.querySelectorAll('.tab-content');
+                const indicator = document.querySelector('.tab-indicator');
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const tabs = document.querySelectorAll('.tab-btn');
-            const contents = document.querySelectorAll('.tab-content');
-            const indicator = document.querySelector('.tab-indicator');
+                tabs.forEach(tab => {
+                    tab.addEventListener('click', () => {
+                        tabs.forEach(t => {
+                            t.classList.remove('active', 'text-white');
+                            t.classList.add('text-white/70');
+                        });
+                        contents.forEach(c => c.classList.remove('active'));
 
-            tabs.forEach(tab => {
-                tab.addEventListener('click', () => {
-                    tabs.forEach(t => {
-                        t.classList.remove('active', 'text-white');
-                        t.classList.add('text-white/70');
+                        tab.classList.add('active', 'text-white');
+                        tab.classList.remove('text-white/70');
+                        
+                        const index = Array.from(tabs).indexOf(tab);
+                        indicator.style.left = `${index * 33.333}%`;
+                        
+                        const content = document.getElementById(tab.dataset.tab);
+                        content.classList.add('active');
                     });
-                    contents.forEach(c => c.classList.remove('active'));
-
-                    tab.classList.add('active', 'text-white');
-                    tab.classList.remove('text-white/70');
-                    
-                    const index = Array.from(tabs).indexOf(tab);
-                    indicator.style.left = `${index * 33.333}%`;
-                    
-                    const content = document.getElementById(tab.dataset.tab);
-                    content.classList.add('active');
                 });
             });
-        });
-    </script>
-</body>
+        </script>
+    </body>
 </html>
