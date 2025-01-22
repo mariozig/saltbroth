@@ -1,0 +1,30 @@
+/* Salt Broth Custom Styles */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+/* Custom properties */
+:root {
+    --primary-purple: #9333ea;
+    --primary-blue: #3b82f6;
+    --text-primary: #1e293b;
+    --text-secondary: #475569;
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Custom utilities */
+.text-balance {
+    text-wrap: balance;
+}
+
+/* Custom components */
+.feature-card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.feature-card:hover {
+    transform: translateY(-2px);
+}
