@@ -50,6 +50,7 @@
         .gradient-text {
             background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
         }
         .premium-button {
@@ -127,12 +128,13 @@
         .divider {
             background: linear-gradient(to right, 
                 transparent 0%,
-                rgba(139, 92, 246, 0.05) 25%,
-                rgba(59, 130, 246, 0.3) 50%,
-                rgba(139, 92, 246, 0.05) 75%,
+                rgba(139, 92, 246, 0.3) 25%,
+                rgba(59, 130, 246, 0.8) 50%,
+                rgba(139, 92, 246, 0.3) 75%,
                 transparent 100%
             );
             height: 2px;
+            width: 100%;
             position: relative;
             overflow: hidden;
         }
@@ -146,9 +148,9 @@
             background: linear-gradient(to right,
                 transparent 0%,
                 transparent 25%,
-                rgba(139, 92, 246, 0.2) 45%,
-                rgba(139, 92, 246, 0.4) 50%,
-                rgba(139, 92, 246, 0.2) 55%,
+                rgba(255, 255, 255, 0.3) 45%,
+                rgba(255, 255, 255, 0.5) 50%,
+                rgba(255, 255, 255, 0.3) 55%,
                 transparent 75%,
                 transparent 100%
             );
@@ -193,8 +195,8 @@
         </section>
 
         <!-- Elegant Divider -->
-        <div class="max-w-6xl mx-auto px-6 py-4">
-            <div class="divider"></div>
+        <div class="w-full max-w-6xl mx-auto px-6 py-4">
+            <div class="block w-full h-[2px] bg-gradient-to-r from-transparent via-purple-500 to-transparent"></div>
         </div>
 
         <!-- Categories Section -->
