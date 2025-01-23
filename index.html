@@ -26,9 +26,9 @@
                     },
                     colors: {
                         accent: {
-                            purple: '#8B5CF6',
-                            blue: '#3B82F6',
-                            pink: '#EC4899'
+                            purple: '#8B5CF6', // Primary accent
+                            blue: '#3B82F6',   // Secondary accent
+                            pink: '#EC4899'    // Tertiary accent
                         }
                     }
                 }
@@ -36,23 +36,30 @@
         }
     </script>
     <style>
-        .glow {
-            text-shadow: 0 0 30px rgba(139, 92, 246, 0.25),
-                        0 0 60px rgba(139, 92, 246, 0.15),
-                        0 0 90px rgba(139, 92, 246, 0.1);
-        }
+        /* Essential styles */
+        /* Glass morphism effect with gradient and blur */
         .glass {
             background: linear-gradient(180deg, rgba(139, 92, 246, 0.03) 0%, rgba(59, 130, 246, 0.02) 100%);
             backdrop-filter: blur(20px);
             border: 1px solid rgba(139, 92, 246, 0.1);
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
         }
+        /* Text gradient with browser compatibility */
         .gradient-text {
             background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%);
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+        /* Glow effect */
+        .glow {
+            text-shadow: 0 0 30px rgba(139, 92, 246, 0.25),
+                        0 0 60px rgba(139, 92, 246, 0.15),
+                        0 0 90px rgba(139, 92, 246, 0.1);
+        }
+        
+        /* Button styles */
+        /* Interactive button with hover effects */
         .premium-button {
             position: relative;
             z-index: 1;
@@ -76,13 +83,9 @@
         .premium-button:hover {
             transform: translateY(-2px);
         }
-        .tab-indicator {
-            position: absolute;
-            bottom: 0;
-            height: 2px;
-            background: #8B5CF6;
-            transition: left 0.3s ease;
-        }
+        
+        /* Tab system */
+        /* Responsive tab system */
         .tab-content {
             display: none;
         }
@@ -104,6 +107,9 @@
                 display: none;
             }
         }
+        
+        /* Mobile layout */
+        /* Mobile-first layout with desktop overrides */
         .mobile-stack {
             display: flex;
             flex-direction: column;
@@ -125,6 +131,9 @@
                 display: none;
             }
         }
+        
+        /* Divider with shimmer */
+        /* Animated divider with shimmer effect */
         .divider {
             background: linear-gradient(to right, 
                 transparent 0%,
@@ -135,6 +144,7 @@
             );
             height: 2px;
             width: 100%;
+            display: block;
             position: relative;
             overflow: hidden;
         }
@@ -196,7 +206,7 @@
 
         <!-- Elegant Divider -->
         <div class="w-full max-w-6xl mx-auto px-6 py-4">
-            <div class="block w-full h-[2px] bg-gradient-to-r from-transparent via-purple-500 to-transparent"></div>
+            <div class="divider"></div>
         </div>
 
         <!-- Categories Section -->
@@ -485,28 +495,33 @@
             </div>
         </footer>
 
+        <!-- Tab switching functionality -->
         <script>
             document.addEventListener('DOMContentLoaded', () => {
+                // Initialize tab system
                 const tabs = document.querySelectorAll('.tab-btn');
                 const contents = document.querySelectorAll('.tab-content');
                 const indicator = document.querySelector('.tab-indicator');
 
+                // Handle tab clicks
                 tabs.forEach(tab => {
                     tab.addEventListener('click', () => {
+                        // Toggle active states
                         tabs.forEach(t => {
                             t.classList.remove('active', 'text-white');
                             t.classList.add('text-white/70');
                         });
                         contents.forEach(c => c.classList.remove('active'));
-
+                        
+                        // Activate selected tab
                         tab.classList.add('active', 'text-white');
                         tab.classList.remove('text-white/70');
                         
                         const index = Array.from(tabs).indexOf(tab);
                         indicator.style.left = `${index * 33.333}%`;
                         
-                        const content = document.getElementById(tab.dataset.tab);
-                        content.classList.add('active');
+                        const targetId = tab.getAttribute('data-tab');
+                        document.getElementById(targetId).classList.add('active');
                     });
                 });
             });
