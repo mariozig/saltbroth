@@ -85,27 +85,24 @@
         }
         
         /* Tab system */
-        /* Responsive tab system */
+        .tab-btn.active > div:last-child {
+            transform: scaleX(1) !important;
+        }
+        .tab-btn.active span:first-child {
+            color: rgb(255 255 255);
+        }
+        .tab-btn {
+            transition: all 0.2s ease;
+        }
+        .tab-btn > div:last-child {
+            transform-origin: left;
+            transition: transform 0.2s ease;
+        }
         .tab-content {
             display: none;
         }
         .tab-content.active {
             display: block;
-        }
-        .tabs-container {
-            display: none;
-        }
-        @media (min-width: 640px) {
-            .tabs-container {
-                display: block;
-                overflow-x: auto;
-                position: relative;
-                scrollbar-width: none;
-                -ms-overflow-style: none;
-            }
-            .tabs-container::-webkit-scrollbar {
-                display: none;
-            }
         }
         
         /* Mobile layout */
@@ -216,29 +213,32 @@
                     <!-- Tabs Navigation (Desktop) -->
                     <div class="hidden md:block relative mb-12">
                         <div class="tabs-container">
-                            <div class="relative flex space-x-1">
-                                <button class="tab-btn active flex-1 min-w-[160px] px-8 py-6 text-white font-medium transition-all hover:text-accent-purple" data-tab="write">
+                            <div class="relative flex border-b border-white/10">
+                                <button class="tab-btn group flex-1 min-w-[160px] px-8 py-6 relative active" data-tab="write">
                                     <div class="flex flex-col items-center gap-2">
-                                        <span class="text-lg">Craft Text</span>
-                                        <span class="text-sm text-white/50">Emails, posts</span>
+                                        <span class="text-lg text-white">Craft Text</span>
+                                        <span class="text-sm text-white/50">Emails, posts, stories & more</span>
                                     </div>
+                                    <div class="absolute bottom-[-1px] left-0 w-full h-[2px] bg-accent-purple transform scale-x-0 transition-all duration-200 origin-left group-hover:scale-x-100"></div>
                                 </button>
-                                <button class="tab-btn flex-1 min-w-[160px] px-8 py-6 text-white/70 font-medium transition-all hover:text-accent-purple" data-tab="create">
+                                <button class="tab-btn group flex-1 min-w-[160px] px-8 py-6 relative" data-tab="create">
                                     <div class="flex flex-col items-center gap-2">
-                                        <span class="text-lg">Create Images</span>
-                                        <span class="text-sm text-white/50">Visual content</span>
+                                        <span class="text-lg text-white/70">Create Images</span>
+                                        <span class="text-sm text-white/50">Art, photos & illustrations</span>
                                     </div>
+                                    <div class="absolute bottom-[-1px] left-0 w-full h-[2px] bg-accent-blue transform scale-x-0 transition-all duration-200 origin-left group-hover:scale-x-100"></div>
                                 </button>
-                                <button class="tab-btn flex-1 min-w-[160px] px-8 py-6 text-white/70 font-medium transition-all hover:text-accent-purple" data-tab="learn">
+                                <button class="tab-btn group flex-1 min-w-[160px] px-8 py-6 relative" data-tab="learn">
                                     <div class="flex flex-col items-center gap-2">
-                                        <span class="text-lg">Learn Anything</span>
-                                        <span class="text-sm text-white/50">Simple guides</span>
+                                        <span class="text-lg text-white/70">Learn Anything</span>
+                                        <span class="text-sm text-white/50">Guides, tutorials & explanations</span>
                                     </div>
+                                    <div class="absolute bottom-[-1px] left-0 w-full h-[2px] bg-accent-pink transform scale-x-0 transition-all duration-200 origin-left group-hover:scale-x-100"></div>
                                 </button>
-                                <div class="tab-indicator" style="width: 33.333%; left: 0;"></div>
                             </div>
                         </div>
                     </div>
+
 
                     <!-- Mobile Stacked Layout -->
                     <div class="mobile-stack md:hidden">
@@ -501,27 +501,27 @@
                 // Initialize tab system
                 const tabs = document.querySelectorAll('.tab-btn');
                 const contents = document.querySelectorAll('.tab-content');
-                const indicator = document.querySelector('.tab-indicator');
+
+                // Set initial active state
+                if (!document.querySelector('.tab-btn.active')) {
+                    tabs[0]?.classList.add('active');
+                    const firstTabId = tabs[0]?.getAttribute('data-tab');
+                    document.getElementById(firstTabId)?.classList.add('active');
+                }
 
                 // Handle tab clicks
                 tabs.forEach(tab => {
                     tab.addEventListener('click', () => {
-                        // Toggle active states
-                        tabs.forEach(t => {
-                            t.classList.remove('active', 'text-white');
-                            t.classList.add('text-white/70');
-                        });
+                        // Remove active state from all tabs
+                        tabs.forEach(t => t.classList.remove('active'));
                         contents.forEach(c => c.classList.remove('active'));
                         
-                        // Activate selected tab
-                        tab.classList.add('active', 'text-white');
-                        tab.classList.remove('text-white/70');
+                        // Add active state to clicked tab
+                        tab.classList.add('active');
                         
-                        const index = Array.from(tabs).indexOf(tab);
-                        indicator.style.left = `${index * 33.333}%`;
-                        
+                        // Show corresponding content
                         const targetId = tab.getAttribute('data-tab');
-                        document.getElementById(targetId).classList.add('active');
+                        document.getElementById(targetId)?.classList.add('active');
                     });
                 });
             });
