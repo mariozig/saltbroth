@@ -209,235 +209,176 @@
         <!-- Categories Section -->
         <section class="px-6 py-20">
             <div class="max-w-6xl mx-auto">
-                <div class="glass rounded-3xl p-6 md:p-12">
-                    <!-- Tabs Navigation (Desktop) -->
-                    <div class="hidden md:block relative mb-12">
-                        <div class="tabs-container">
-                            <div class="relative flex border-b border-white/10">
-                                <button class="tab-btn group flex-1 min-w-[160px] px-8 py-6 relative active" data-tab="write">
-                                    <div class="flex flex-col items-center gap-2">
-                                        <span class="text-lg text-white">Craft Text</span>
-                                        <span class="text-sm text-white/50">Emails, posts, stories & more</span>
-                                    </div>
-                                    <div class="absolute bottom-[-1px] left-0 w-full h-[2px] bg-accent-purple transform scale-x-0 transition-all duration-200 origin-left group-hover:scale-x-100"></div>
-                                </button>
-                                <button class="tab-btn group flex-1 min-w-[160px] px-8 py-6 relative" data-tab="create">
-                                    <div class="flex flex-col items-center gap-2">
-                                        <span class="text-lg text-white/70">Create Images</span>
-                                        <span class="text-sm text-white/50">Art, photos & illustrations</span>
-                                    </div>
-                                    <div class="absolute bottom-[-1px] left-0 w-full h-[2px] bg-accent-blue transform scale-x-0 transition-all duration-200 origin-left group-hover:scale-x-100"></div>
-                                </button>
-                                <button class="tab-btn group flex-1 min-w-[160px] px-8 py-6 relative" data-tab="learn">
-                                    <div class="flex flex-col items-center gap-2">
-                                        <span class="text-lg text-white/70">Learn Anything</span>
-                                        <span class="text-sm text-white/50">Guides, tutorials & explanations</span>
-                                    </div>
-                                    <div class="absolute bottom-[-1px] left-0 w-full h-[2px] bg-accent-pink transform scale-x-0 transition-all duration-200 origin-left group-hover:scale-x-100"></div>
-                                </button>
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 gradient-text leading-relaxed py-1">Explore Prompt Categories</h2>
+                    <p class="text-xl text-gray-400 max-w-2xl mx-auto">Discover the perfect prompts for your creative journey, carefully curated into intuitive categories.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Creative Writing -->
+                    <div class="group glass hover:bg-accent-purple/5 rounded-3xl p-8 transition-all duration-300 cursor-pointer">
+                        <div class="flex items-start justify-between mb-8">
+                            <span class="inline-block px-4 py-1.5 bg-accent-purple/10 rounded-full text-sm font-medium text-accent-purple">Creative Writing</span>
+                            <div class="w-10 h-10 rounded-full bg-accent-purple/10 flex items-center justify-center">
+                                <svg class="w-5 h-5 text-accent-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4 text-white group-hover:text-accent-purple transition-colors">Stories & Narratives</h3>
+                        <p class="text-gray-400 mb-6">Craft compelling stories, develop characters, and build immersive worlds.</p>
+                        <div class="space-y-3">
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-purple/30 mr-3"></span>
+                                Short Stories
+                            </div>
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-purple/30 mr-3"></span>
+                                Character Development
+                            </div>
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-purple/30 mr-3"></span>
+                                Plot Generation
                             </div>
                         </div>
                     </div>
 
-
-                    <!-- Mobile Stacked Layout -->
-                    <div class="mobile-stack md:hidden">
-                        <div class="mobile-section" id="write-mobile">
-                            <div class="mobile-section-header">
-                                <h3 class="text-lg font-medium text-white">Craft Text</h3>
-                                <p class="text-sm text-white/50">Emails, posts</p>
-                            </div>
-                            <div class="write-content">
-                                <div class="grid md:grid-cols-2 gap-16">
-                                    <div class="space-y-8">
-                                        <span class="inline-block px-4 py-1.5 bg-accent-purple/10 rounded-full text-sm font-medium text-accent-purple tracking-wide">Writing Assistant</span>
-                                        <h3 class="text-4xl font-semibold gradient-text leading-tight">Turn your ideas into engaging writing</h3>
-                                        <p class="text-xl text-gray-400 leading-relaxed">Perfect for emails, social posts, or your next blog entry. No writing experience needed!</p>
-                                        <div class="pt-4">
-                                            <a href="#" class="premium-button inline-flex items-center px-8 py-4 text-white rounded-xl font-medium group">
-                                                <span class="mr-3">Try writing prompts</span>
-                                                <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="example-box rounded-2xl p-10">
-                                        <div class="space-y-6">
-                                            <div class="flex items-center space-x-3">
-                                                <div class="w-2 h-2 rounded-full bg-accent-purple/30"></div>
-                                                <p class="text-sm font-medium uppercase tracking-wider text-accent-purple/40">Example prompt</p>
-                                            </div>
-                                            <div class="space-y-4">
-                                                <p class="text-xl font-medium text-white/90">"Write a compelling email about [topic] that's friendly and professional."</p>
-                                                <p class="text-sm text-accent-purple/50">Perfect for: Business communication, Team updates, Client outreach</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                    <!-- Business Writing -->
+                    <div class="group glass hover:bg-accent-blue/5 rounded-3xl p-8 transition-all duration-300 cursor-pointer">
+                        <div class="flex items-start justify-between mb-8">
+                            <span class="inline-block px-4 py-1.5 bg-accent-blue/10 rounded-full text-sm font-medium text-accent-blue">Business</span>
+                            <div class="w-10 h-10 rounded-full bg-accent-blue/10 flex items-center justify-center">
+                                <svg class="w-5 h-5 text-accent-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
                             </div>
                         </div>
-                        
-                        <div class="mobile-section" id="create-mobile">
-                            <div class="mobile-section-header">
-                                <h3 class="text-lg font-medium text-white">Create Images</h3>
-                                <p class="text-sm text-white/50">Visual content</p>
+                        <h3 class="text-2xl font-semibold mb-4 text-white group-hover:text-accent-blue transition-colors">Professional Content</h3>
+                        <p class="text-gray-400 mb-6">Create polished business content that drives engagement and results.</p>
+                        <div class="space-y-3">
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-blue/30 mr-3"></span>
+                                Email Templates
                             </div>
-                            <div class="create-content">
-                                <div class="grid md:grid-cols-2 gap-16">
-                                    <div class="space-y-8">
-                                        <span class="inline-block px-4 py-1.5 bg-accent-blue/10 rounded-full text-sm font-medium text-accent-blue tracking-wide">Image Creation</span>
-                                        <h3 class="text-4xl font-semibold gradient-text leading-tight">Create stunning images instantly</h3>
-                                        <p class="text-xl text-gray-400 leading-relaxed">Just describe what you want to see, and watch as AI brings your vision to life.</p>
-                                        <div class="pt-4">
-                                            <a href="#" class="premium-button inline-flex items-center px-8 py-4 text-white rounded-xl font-medium group">
-                                                <span class="mr-3">Try image prompts</span>
-                                                <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="example-box rounded-2xl p-10">
-                                        <div class="space-y-6">
-                                            <div class="flex items-center space-x-3">
-                                                <div class="w-2 h-2 rounded-full bg-accent-blue/30"></div>
-                                                <p class="text-sm font-medium uppercase tracking-wider text-accent-blue/40">Example prompt</p>
-                                            </div>
-                                            <div class="space-y-4">
-                                                <p class="text-xl font-medium text-white/90">"Create a colorful illustration of a [subject] in a [style] style."</p>
-                                                <p class="text-sm text-accent-blue/50">Perfect for: Social media, Blog posts, Presentations</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-blue/30 mr-3"></span>
+                                Proposals
                             </div>
-                        </div>
-                        
-                        <div class="mobile-section" id="learn-mobile">
-                            <div class="mobile-section-header">
-                                <h3 class="text-lg font-medium text-white">Learn Anything</h3>
-                                <p class="text-sm text-white/50">Simple guides</p>
-                            </div>
-                            <div class="learn-content">
-                                <div class="grid md:grid-cols-2 gap-16">
-                                    <div class="space-y-8">
-                                        <span class="inline-block px-4 py-1.5 bg-accent-pink/10 rounded-full text-sm font-medium text-accent-pink tracking-wide">Learning Guide</span>
-                                        <h3 class="text-4xl font-semibold gradient-text leading-tight">Understand any topic easily</h3>
-                                        <p class="text-xl text-gray-400 leading-relaxed">Get friendly explanations that make complex topics simple to understand.</p>
-                                        <div class="pt-4">
-                                            <a href="#" class="premium-button inline-flex items-center px-8 py-4 text-white rounded-xl font-medium group">
-                                                <span class="mr-3">Try learning prompts</span>
-                                                <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="example-box rounded-2xl p-10">
-                                        <div class="space-y-6">
-                                            <div class="flex items-center space-x-3">
-                                                <div class="w-2 h-2 rounded-full bg-accent-pink/30"></div>
-                                                <p class="text-sm font-medium uppercase tracking-wider text-accent-pink/40">Example prompt</p>
-                                            </div>
-                                            <div class="space-y-4">
-                                                <p class="text-xl font-medium text-white/90">"Explain [topic] in simple terms, as if you're teaching a beginner."</p>
-                                                <p class="text-sm text-accent-pink/50">Perfect for: Students, Self-learning, Teaching others</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-blue/30 mr-3"></span>
+                                Reports
                             </div>
                         </div>
                     </div>
 
-                    <!-- Tab Content (Desktop) -->
-                    <div class="hidden md:block">
-                        <div id="write" class="tab-content active">
-                            <div class="grid md:grid-cols-2 gap-16">
-                                <div class="space-y-8">
-                                    <span class="inline-block px-4 py-1.5 bg-accent-purple/10 rounded-full text-sm font-medium text-accent-purple tracking-wide">Writing Assistant</span>
-                                    <h3 class="text-4xl font-semibold gradient-text leading-tight">Turn your ideas into engaging writing</h3>
-                                    <p class="text-xl text-gray-400 leading-relaxed">Perfect for emails, social posts, or your next blog entry. No writing experience needed!</p>
-                                    <div class="pt-4">
-                                        <a href="#" class="premium-button inline-flex items-center px-8 py-4 text-white rounded-xl font-medium group">
-                                            <span class="mr-3">Try writing prompts</span>
-                                            <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="example-box rounded-2xl p-10">
-                                    <div class="space-y-6">
-                                        <div class="flex items-center space-x-3">
-                                            <div class="w-2 h-2 rounded-full bg-accent-purple/30"></div>
-                                            <p class="text-sm font-medium uppercase tracking-wider text-accent-purple/40">Example prompt</p>
-                                        </div>
-                                        <div class="space-y-4">
-                                            <p class="text-xl font-medium text-white/90">"Write a compelling email about [topic] that's friendly and professional."</p>
-                                            <p class="text-sm text-accent-purple/50">Perfect for: Business communication, Team updates, Client outreach</p>
-                                        </div>
-                                    </div>
-                                </div>
+                    <!-- Visual Arts -->
+                    <div class="group glass hover:bg-accent-pink/5 rounded-3xl p-8 transition-all duration-300 cursor-pointer">
+                        <div class="flex items-start justify-between mb-8">
+                            <span class="inline-block px-4 py-1.5 bg-accent-pink/10 rounded-full text-sm font-medium text-accent-pink">Visual Arts</span>
+                            <div class="w-10 h-10 rounded-full bg-accent-pink/10 flex items-center justify-center">
+                                <svg class="w-5 h-5 text-accent-pink" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                </svg>
                             </div>
                         </div>
-                        <div id="create" class="tab-content">
-                            <div class="grid md:grid-cols-2 gap-16">
-                                <div class="space-y-8">
-                                    <span class="inline-block px-4 py-1.5 bg-accent-blue/10 rounded-full text-sm font-medium text-accent-blue tracking-wide">Image Creation</span>
-                                    <h3 class="text-4xl font-semibold gradient-text leading-tight">Create stunning images instantly</h3>
-                                    <p class="text-xl text-gray-400 leading-relaxed">Just describe what you want to see, and watch as AI brings your vision to life.</p>
-                                    <div class="pt-4">
-                                        <a href="#" class="premium-button inline-flex items-center px-8 py-4 text-white rounded-xl font-medium group">
-                                            <span class="mr-3">Try image prompts</span>
-                                            <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="example-box rounded-2xl p-10">
-                                    <div class="space-y-6">
-                                        <div class="flex items-center space-x-3">
-                                            <div class="w-2 h-2 rounded-full bg-accent-blue/30"></div>
-                                            <p class="text-sm font-medium uppercase tracking-wider text-accent-blue/40">Example prompt</p>
-                                        </div>
-                                        <div class="space-y-4">
-                                            <p class="text-xl font-medium text-white/90">"Create a colorful illustration of a [subject] in a [style] style."</p>
-                                            <p class="text-sm text-accent-blue/50">Perfect for: Social media, Blog posts, Presentations</p>
-                                        </div>
-                                    </div>
-                                </div>
+                        <h3 class="text-2xl font-semibold mb-4 text-white group-hover:text-accent-pink transition-colors">Digital Artwork</h3>
+                        <p class="text-gray-400 mb-6">Generate stunning visuals and artwork with detailed style control.</p>
+                        <div class="space-y-3">
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-pink/30 mr-3"></span>
+                                Illustrations
+                            </div>
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-pink/30 mr-3"></span>
+                                Digital Paintings
+                            </div>
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-pink/30 mr-3"></span>
+                                Character Design
                             </div>
                         </div>
-                        <div id="learn" class="tab-content">
-                            <div class="grid md:grid-cols-2 gap-16">
-                                <div class="space-y-8">
-                                    <span class="inline-block px-4 py-1.5 bg-accent-pink/10 rounded-full text-sm font-medium text-accent-pink tracking-wide">Learning Guide</span>
-                                    <h3 class="text-4xl font-semibold gradient-text leading-tight">Understand any topic easily</h3>
-                                    <p class="text-xl text-gray-400 leading-relaxed">Get friendly explanations that make complex topics simple to understand.</p>
-                                    <div class="pt-4">
-                                        <a href="#" class="premium-button inline-flex items-center px-8 py-4 text-white rounded-xl font-medium group">
-                                            <span class="mr-3">Try learning prompts</span>
-                                            <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="example-box rounded-2xl p-10">
-                                    <div class="space-y-6">
-                                        <div class="flex items-center space-x-3">
-                                            <div class="w-2 h-2 rounded-full bg-accent-pink/30"></div>
-                                            <p class="text-sm font-medium uppercase tracking-wider text-accent-pink/40">Example prompt</p>
-                                        </div>
-                                        <div class="space-y-4">
-                                            <p class="text-xl font-medium text-white/90">"Explain [topic] in simple terms, as if you're teaching a beginner."</p>
-                                            <p class="text-sm text-accent-pink/50">Perfect for: Students, Self-learning, Teaching others</p>
-                                        </div>
-                                    </div>
-                                </div>
+                    </div>
+
+                    <!-- Educational -->
+                    <div class="group glass hover:bg-accent-purple/5 rounded-3xl p-8 transition-all duration-300 cursor-pointer">
+                        <div class="flex items-start justify-between mb-8">
+                            <span class="inline-block px-4 py-1.5 bg-accent-purple/10 rounded-full text-sm font-medium text-accent-purple">Educational</span>
+                            <div class="w-10 h-10 rounded-full bg-accent-purple/10 flex items-center justify-center">
+                                <svg class="w-5 h-5 text-accent-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4 text-white group-hover:text-accent-purple transition-colors">Learning & Teaching</h3>
+                        <p class="text-gray-400 mb-6">Create educational content that makes complex topics accessible.</p>
+                        <div class="space-y-3">
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-purple/30 mr-3"></span>
+                                Study Guides
+                            </div>
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-purple/30 mr-3"></span>
+                                Lesson Plans
+                            </div>
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-purple/30 mr-3"></span>
+                                Explanations
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Technical -->
+                    <div class="group glass hover:bg-accent-blue/5 rounded-3xl p-8 transition-all duration-300 cursor-pointer">
+                        <div class="flex items-start justify-between mb-8">
+                            <span class="inline-block px-4 py-1.5 bg-accent-blue/10 rounded-full text-sm font-medium text-accent-blue">Technical</span>
+                            <div class="w-10 h-10 rounded-full bg-accent-blue/10 flex items-center justify-center">
+                                <svg class="w-5 h-5 text-accent-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4 text-white group-hover:text-accent-blue transition-colors">Code & Documentation</h3>
+                        <p class="text-gray-400 mb-6">Generate technical content with precision and clarity.</p>
+                        <div class="space-y-3">
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-blue/30 mr-3"></span>
+                                Code Examples
+                            </div>
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-blue/30 mr-3"></span>
+                                API Documentation
+                            </div>
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-blue/30 mr-3"></span>
+                                Technical Guides
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Marketing -->
+                    <div class="group glass hover:bg-accent-pink/5 rounded-3xl p-8 transition-all duration-300 cursor-pointer">
+                        <div class="flex items-start justify-between mb-8">
+                            <span class="inline-block px-4 py-1.5 bg-accent-pink/10 rounded-full text-sm font-medium text-accent-pink">Marketing</span>
+                            <div class="w-10 h-10 rounded-full bg-accent-pink/10 flex items-center justify-center">
+                                <svg class="w-5 h-5 text-accent-pink" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4 text-white group-hover:text-accent-pink transition-colors">Marketing Copy</h3>
+                        <p class="text-gray-400 mb-6">Create engaging content that converts and drives growth.</p>
+                        <div class="space-y-3">
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-pink/30 mr-3"></span>
+                                Social Media
+                            </div>
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-pink/30 mr-3"></span>
+                                Ad Copy
+                            </div>
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-pink/30 mr-3"></span>
+                                Landing Pages
                             </div>
                         </div>
                     </div>
