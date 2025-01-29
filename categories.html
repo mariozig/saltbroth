@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salt Broth - Browse Prompt Categories</title>
+    <meta name="description" content="Explore our curated collection of AI prompts across various categories. Find the perfect prompt for your creative, business, or educational needs.">
+    <meta name="keywords" content="AI prompts, creative prompts, business prompts, educational prompts, visual arts prompts">
+    <meta property="og:title" content="Salt Broth - Browse Prompt Categories">
+    <meta property="og:description" content="Discover our curated collection of AI prompts across various categories.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Salt Broth - Categories">
+    <meta name="twitter:description" content="Discover our curated collection of AI prompts across various categories.">
+    <link rel="canonical" href="https://saltbroth.com/categories">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .glass {
+            background: linear-gradient(180deg, rgba(139, 92, 246, 0.03) 0%, rgba(59, 130, 246, 0.02) 100%);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #8B5CF6, #3B82F6, #EC4899);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .glow {
+            text-shadow: 0 0 40px rgba(139, 92, 246, 0.5);
+        }
+        .category-card {
+            transition: all 0.3s ease-in-out;
+        }
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    colors: {
+                        accent: {
+                            purple: '#8B5CF6',  // Creative
+                            blue: '#3B82F6',    // Business
+                            pink: '#EC4899',    // Visual Arts
+                            emerald: '#10B981', // Educational
+                            amber: '#F59E0B',   // Marketing
+                            teal: '#14B8A6',    // Technical
+                            red: '#EF4444',     // Gaming
+                            indigo: '#6366F1'   // Research
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-black text-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="/" class="text-xl font-bold gradient-text">SALT BROTH</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="/" class="text-gray-300 hover:text-white transition-colors">Home</a>
+                    <a href="/categories" class="text-white font-medium">Categories</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-24 min-h-screen">
+        <!-- Hero Section -->
+        <section class="px-6 py-12 sm:py-20">
+            <div class="max-w-6xl mx-auto text-center">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 gradient-text glow">
+                    Browse Categories
+                </h1>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    Explore our curated collection of AI prompts, organized by category to help you find exactly what you need.
+                </p>
+            </div>
+        </section>
+
+        <!-- Categories Grid -->
+        <section class="px-6 py-12">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <!-- Creative Writing -->
+                    <div class="category-card group glass hover:bg-accent-purple/5 rounded-3xl p-8 transition-all duration-300 cursor-pointer">
+                        <div class="flex items-start justify-between mb-8">
+                            <span class="inline-block px-4 py-1.5 bg-accent-purple/10 rounded-full text-sm font-medium text-accent-purple">Creative Writing</span>
+                            <div class="w-10 h-10 rounded-full bg-accent-purple/10 flex items-center justify-center">
+                                <svg class="w-5 h-5 text-accent-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4 text-white group-hover:text-accent-purple transition-colors">Storytelling & Narratives</h3>
+                        <p class="text-gray-400 mb-6">Craft compelling stories, develop characters, and enhance your creative writing skills.</p>
+                        <div class="space-y-3">
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-purple/30 mr-3"></span>
+                                Fiction
+                            </div>
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-purple/30 mr-3"></span>
+                                Poetry
+                            </div>
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-purple/30 mr-3"></span>
+                                Dialogue
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Business -->
+                    <div class="category-card group glass hover:bg-accent-blue/5 rounded-3xl p-8 transition-all duration-300 cursor-pointer">
+                        <div class="flex items-start justify-between mb-8">
+                            <span class="inline-block px-4 py-1.5 bg-accent-blue/10 rounded-full text-sm font-medium text-accent-blue">Business</span>
+                            <div class="w-10 h-10 rounded-full bg-accent-blue/10 flex items-center justify-center">
+                                <svg class="w-5 h-5 text-accent-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4 text-white group-hover:text-accent-blue transition-colors">Professional Content</h3>
+                        <p class="text-gray-400 mb-6">Create business documents, marketing copy, and professional communications.</p>
+                        <div class="space-y-3">
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-blue/30 mr-3"></span>
+                                Emails
+                            </div>
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-blue/30 mr-3"></span>
+                                Reports
+                            </div>
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-blue/30 mr-3"></span>
+                                Proposals
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Visual Arts -->
+                    <div class="category-card group glass hover:bg-accent-pink/5 rounded-3xl p-8 transition-all duration-300 cursor-pointer">
+                        <div class="flex items-start justify-between mb-8">
+                            <span class="inline-block px-4 py-1.5 bg-accent-pink/10 rounded-full text-sm font-medium text-accent-pink">Visual Arts</span>
+                            <div class="w-10 h-10 rounded-full bg-accent-pink/10 flex items-center justify-center">
+                                <svg class="w-5 h-5 text-accent-pink" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4 text-white group-hover:text-accent-pink transition-colors">Image Generation</h3>
+                        <p class="text-gray-400 mb-6">Generate stunning artwork, illustrations, and visual concepts with AI.</p>
+                        <div class="space-y-3">
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-pink/30 mr-3"></span>
+                                Digital Art
+                            </div>
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-pink/30 mr-3"></span>
+                                Characters
+                            </div>
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-pink/30 mr-3"></span>
+                                Landscapes
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Educational -->
+                    <div class="category-card group glass hover:bg-accent-emerald/5 rounded-3xl p-8 transition-all duration-300 cursor-pointer">
+                        <div class="flex items-start justify-between mb-8">
+                            <span class="inline-block px-4 py-1.5 bg-accent-emerald/10 rounded-full text-sm font-medium text-accent-emerald">Educational</span>
+                            <div class="w-10 h-10 rounded-full bg-accent-emerald/10 flex items-center justify-center">
+                                <svg class="w-5 h-5 text-accent-emerald" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.477 6.364 9.268 5.12 7.5 3.5c-1.768 1.67-3.557 3.912-4.832 6.53-1.275 2.62.607 5.09 2.457 6.253z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4 text-white group-hover:text-accent-emerald transition-colors">Learning & Teaching</h3>
+                        <p class="text-gray-400 mb-6">Create educational content, lesson plans, and learning materials.</p>
+                        <div class="space-y-3">
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-emerald/30 mr-3"></span>
+                                Lessons
+                            </div>
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-emerald/30 mr-3"></span>
+                                Quizzes
+                            </div>
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-emerald/30 mr-3"></span>
+                                Tutorials
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Technical -->
+                    <div class="category-card group glass hover:bg-accent-teal/5 rounded-3xl p-8 transition-all duration-300 cursor-pointer">
+                        <div class="flex items-start justify-between mb-8">
+                            <span class="inline-block px-4 py-1.5 bg-accent-teal/10 rounded-full text-sm font-medium text-accent-teal">Technical</span>
+                            <div class="w-10 h-10 rounded-full bg-accent-teal/10 flex items-center justify-center">
+                                <svg class="w-5 h-5 text-accent-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17l-2.25 2.25l1.5-1.5m-3 3h6m6 2h2"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4 text-white group-hover:text-accent-teal transition-colors">Development & Code</h3>
+                        <p class="text-gray-400 mb-6">Generate code snippets, technical documentation, and programming solutions.</p>
+                        <div class="space-y-3">
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-teal/30 mr-3"></span>
+                                Code
+                            </div>
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-teal/30 mr-3"></span>
+                                Docs
+                            </div>
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-teal/30 mr-3"></span>
+                                APIs
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Marketing -->
+                    <div class="category-card group glass hover:bg-accent-amber/5 rounded-3xl p-8 transition-all duration-300 cursor-pointer">
+                        <div class="flex items-start justify-between mb-8">
+                            <span class="inline-block px-4 py-1.5 bg-accent-amber/10 rounded-full text-sm font-medium text-accent-amber">Marketing</span>
+                            <div class="w-10 h-10 rounded-full bg-accent-amber/10 flex items-center justify-center">
+                                <svg class="w-5 h-5 text-accent-amber" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4 text-white group-hover:text-accent-amber transition-colors">Digital Marketing</h3>
+                        <p class="text-gray-400 mb-6">Create engaging marketing content, social media posts, and ad copy.</p>
+                        <div class="space-y-3">
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-amber/30 mr-3"></span>
+                                Social
+                            </div>
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-amber/30 mr-3"></span>
+                                Ads
+                            </div>
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-amber/30 mr-3"></span>
+                                Email
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Research -->
+                    <div class="category-card group glass hover:bg-accent-indigo/5 rounded-3xl p-8 transition-all duration-300 cursor-pointer">
+                        <div class="flex items-start justify-between mb-8">
+                            <span class="inline-block px-4 py-1.5 bg-accent-indigo/10 rounded-full text-sm font-medium text-accent-indigo">Research</span>
+                            <div class="w-10 h-10 rounded-full bg-accent-indigo/10 flex items-center justify-center">
+                                <svg class="w-5 h-5 text-accent-indigo" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4 text-white group-hover:text-accent-indigo transition-colors">Academic & Research</h3>
+                        <p class="text-gray-400 mb-6">Generate research questions, literature reviews, and academic content.</p>
+                        <div class="space-y-3">
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-indigo/30 mr-3"></span>
+                                Papers
+                            </div>
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-indigo/30 mr-3"></span>
+                                Analysis
+                            </div>
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-indigo/30 mr-3"></span>
+                                Reviews
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gaming -->
+                    <div class="category-card group glass hover:bg-accent-red/5 rounded-3xl p-8 transition-all duration-300 cursor-pointer">
+                        <div class="flex items-start justify-between mb-8">
+                            <span class="inline-block px-4 py-1.5 bg-accent-red/10 rounded-full text-sm font-medium text-accent-red">Gaming</span>
+                            <div class="w-10 h-10 rounded-full bg-accent-red/10 flex items-center justify-center">
+                                <svg class="w-5 h-5 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2 2H9v-2a2 2 0 012-2zm-3-7v2m-7 0v2"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4 text-white group-hover:text-accent-red transition-colors">Game Development</h3>
+                        <p class="text-gray-400 mb-6">Create game narratives, character backstories, and world-building content.</p>
+                        <div class="space-y-3">
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-red/30 mr-3"></span>
+                                Story
+                            </div>
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-red/30 mr-3"></span>
+                                NPCs
+                            </div>
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-red/30 mr-3"></span>
+                                Quests
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="px-6 py-12 md:py-20 border-t border-white/10">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center">
+                    <p class="text-gray-500">&copy; 2025 Salt Broth. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
