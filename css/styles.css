@@ -1,0 +1,43 @@
+/* Glass morphism effect with gradient and blur */
+.glass {
+    background: linear-gradient(180deg, rgba(139, 92, 246, 0.03) 0%, rgba(59, 130, 246, 0.02) 100%);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Text gradient effect */
+.gradient-text {
+    background: linear-gradient(to right, #8B5CF6, #3B82F6, #EC4899);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Glow effect */
+.glow {
+    text-shadow: 0 0 40px rgba(139, 92, 246, 0.5);
+}
+
+/* Category card transitions */
+.category-card {
+    transition: all 0.3s ease-in-out;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Divider styles */
+.divider {
+    height: 1px;
+    background: linear-gradient(to right, 
+        rgba(139, 92, 246, 0.1), 
+        rgba(59, 130, 246, 0.2), 
+        rgba(236, 73, 153, 0.1)
+    );
+}
+
+/* Responsive text utilities */
+.text-balance {
+    text-wrap: balance;
+}

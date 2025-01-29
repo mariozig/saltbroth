@@ -14,9 +14,6 @@
     <meta name="twitter:description" content="Your creative AI marketplace for crafting text, creating images, and learning anything.">
     <link rel="canonical" href="https://saltbroth.com">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -26,157 +23,25 @@
                     },
                     colors: {
                         accent: {
-                            purple: '#8B5CF6', // Creative Writing
-                            blue: '#3B82F6',   // Business
-                            pink: '#EC4899',   // Visual Arts
+                            purple: '#8B5CF6',  // Creative
+                            blue: '#3B82F6',    // Business
+                            pink: '#EC4899',    // Visual Arts
                             emerald: '#10B981', // Educational
-                            amber: '#F59E0B',  // Marketing
-                            teal: '#14B8A6'    // Technical
+                            amber: '#F59E0B',   // Marketing
+                            teal: '#14B8A6',    // Technical
+                            red: '#EF4444',     // Gaming
+                            indigo: '#6366F1'   // Research
                         }
                     }
                 }
             }
         }
     </script>
-    <style>
-        /* Essential styles */
-        /* Glass morphism effect with gradient and blur */
-        .glass {
-            background: linear-gradient(180deg, rgba(139, 92, 246, 0.03) 0%, rgba(59, 130, 246, 0.02) 100%);
-            backdrop-filter: blur(20px);
-            border: 1px solid rgba(139, 92, 246, 0.1);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-        }
-        /* Text gradient with browser compatibility */
-        .gradient-text {
-            background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        /* Glow effect */
-        .glow {
-            text-shadow: 0 0 30px rgba(139, 92, 246, 0.25),
-                        0 0 60px rgba(139, 92, 246, 0.15),
-                        0 0 90px rgba(139, 92, 246, 0.1);
-        }
-        
-        /* Button styles */
-        /* Interactive button with hover effects */
-        .premium-button {
-            position: relative;
-            z-index: 1;
-            overflow: hidden;
-            transition: all 0.3s ease;
-        }
-        .premium-button::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%);
-            z-index: -1;
-            transition: all 0.3s ease;
-        }
-        .premium-button:hover::before {
-            opacity: 0.9;
-        }
-        .premium-button:hover {
-            transform: translateY(-2px);
-        }
-        
-        /* Tab system */
-        .tab-btn.active > div:last-child {
-            transform: scaleX(1) !important;
-        }
-        .tab-btn.active span:first-child {
-            color: rgb(255 255 255);
-        }
-        .tab-btn {
-            transition: all 0.2s ease;
-        }
-        .tab-btn > div:last-child {
-            transform-origin: left;
-            transition: transform 0.2s ease;
-        }
-        .tab-content {
-            display: none;
-        }
-        .tab-content.active {
-            display: block;
-        }
-        
-        /* Mobile layout */
-        /* Mobile-first layout with desktop overrides */
-        .mobile-stack {
-            display: flex;
-            flex-direction: column;
-            gap: 24px;
-        }
-        .mobile-section {
-            padding: 24px 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        .mobile-section:last-child {
-            border-bottom: none;
-        }
-        .mobile-section-header {
-            margin-bottom: 16px;
-            text-align: center;
-        }
-        @media (min-width: 640px) {
-            .mobile-stack {
-                display: none;
-            }
-        }
-        
-        /* Divider with shimmer */
-        /* Animated divider with shimmer effect */
-        .divider {
-            background: linear-gradient(to right, 
-                transparent 0%,
-                rgba(139, 92, 246, 0.3) 25%,
-                rgba(59, 130, 246, 0.8) 50%,
-                rgba(139, 92, 246, 0.3) 75%,
-                transparent 100%
-            );
-            height: 2px;
-            width: 100%;
-            display: block;
-            position: relative;
-            overflow: hidden;
-        }
-        .divider::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -50%;
-            width: 200%;
-            height: 100%;
-            background: linear-gradient(to right,
-                transparent 0%,
-                transparent 25%,
-                rgba(255, 255, 255, 0.3) 45%,
-                rgba(255, 255, 255, 0.5) 50%,
-                rgba(255, 255, 255, 0.3) 55%,
-                transparent 75%,
-                transparent 100%
-            );
-            animation: shimmer 6s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
-            will-change: transform;
-            backface-visibility: hidden;
-            transform: translateZ(0);
-        }
-        @keyframes shimmer {
-            0% { transform: translateX(-15%); }
-            25% { transform: translateX(-5%); }
-            50% { transform: translateX(5%); }
-            75% { transform: translateX(15%); }
-            100% { transform: translateX(-15%); }
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="js/main.js"></script>
 </head>
 <body class="bg-black text-white">
     <main class="min-h-screen flex flex-col items-center justify-center p-4 sm:p-8">
