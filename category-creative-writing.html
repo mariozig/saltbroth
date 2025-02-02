@@ -1,5 +1,7 @@
+<!-- Creative Writing Category Page - Displays writing-related subcategories and prompts -->
 <!DOCTYPE html>
 <html lang="en">
+<!-- Head: Meta tags, SEO information, and resource loading -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,6 +23,7 @@
     <script src="js/main.js"></script>
 </head>
 <body class="bg-black text-white">
+    <!-- Navigation: Fixed top navigation with back button to categories -->
     <nav class="fixed top-0 left-0 right-0 z-50 glass border-b border-white/5">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
@@ -33,6 +36,7 @@
     </nav>
 
     <main class="pt-24 min-h-screen">
+        <!-- Hero: Category title and overview description -->
         <section class="px-6 py-12">
             <div class="max-w-6xl mx-auto text-center">
                 <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold gradient-text glow leading-tight pb-2">
@@ -44,9 +48,11 @@
             </div>
         </section>
 
+        <!-- Subcategories Grid: Writing-focused prompt categories -->
         <section class="px-6 py-12">
             <div class="max-w-7xl mx-auto">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Stories & Narratives Card: Fiction writing prompts -->
                     <div class="category-card glass rounded-3xl p-8 hover:bg-accent-purple/5 cursor-pointer group">
                         <div class="flex items-center space-x-4 mb-6">
                             <div class="w-12 h-12 rounded-xl bg-accent-purple/10 flex items-center justify-center">
@@ -78,6 +84,7 @@
                         </div>
                     </div>
 
+                    <!-- Poetry Card: Traditional and modern poetry prompts -->
                     <div class="category-card glass rounded-3xl p-8 hover:bg-accent-purple/5 cursor-pointer group">
                         <div class="flex items-center space-x-4 mb-6">
                             <div class="w-12 h-12 rounded-xl bg-accent-purple/10 flex items-center justify-center">
@@ -109,6 +116,7 @@
                         </div>
                     </div>
 
+                    <!-- Scripts Card: Screenplay and stage play prompts -->
                     <div class="category-card glass rounded-3xl p-8 hover:bg-accent-purple/5 cursor-pointer group">
                         <div class="flex items-center space-x-4 mb-6">
                             <div class="w-12 h-12 rounded-xl bg-accent-purple/10 flex items-center justify-center">
@@ -140,6 +148,7 @@
                         </div>
                     </div>
 
+                    <!-- Creative Nonfiction Card: Real-world narrative prompts -->
                     <div class="category-card glass rounded-3xl p-8 hover:bg-accent-purple/5 cursor-pointer group">
                         <div class="flex items-center space-x-4 mb-6">
                             <div class="w-12 h-12 rounded-xl bg-accent-purple/10 flex items-center justify-center">
@@ -173,48 +182,18 @@
                 </div>
             </div>
         </section>
-
-        <section class="px-6 py-12">
-            <div class="max-w-7xl mx-auto">
-                <h2 class="text-3xl font-bold mb-8">Related Categories</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <a href="category-visual-arts.html" class="category-card glass rounded-3xl p-8 hover:bg-accent-pink/5 cursor-pointer group">
-                        <div class="flex items-center space-x-4">
-                            <div class="w-12 h-12 rounded-xl bg-accent-pink/10 flex items-center justify-center">
-                                <i class="fas fa-paint-brush text-2xl text-accent-pink"></i>
-                            </div>
-                            <h3 class="text-xl font-bold text-white group-hover:text-accent-pink transition-colors">
-                                Visual Arts
-                            </h3>
-                        </div>
-                        <p class="text-gray-400 mt-4">Combine writing with visual storytelling</p>
-                    </a>
-
-                    <a href="category-educational.html" class="category-card glass rounded-3xl p-8 hover:bg-accent-emerald/5 cursor-pointer group">
-                        <div class="flex items-center space-x-4">
-                            <div class="w-12 h-12 rounded-xl bg-accent-emerald/10 flex items-center justify-center">
-                                <i class="fas fa-graduation-cap text-2xl text-accent-emerald"></i>
-                            </div>
-                            <h3 class="text-xl font-bold text-white group-hover:text-accent-emerald transition-colors">
-                                Educational
-                            </h3>
-                        </div>
-                        <p class="text-gray-400 mt-4">Create educational content with creative flair</p>
-                    </a>
-                </div>
-            </div>
-        </section>
     </main>
 
+    <!-- Footer: Page footer with related links -->
     <footer class="px-6 py-12 md:py-20 border-t border-white/10">
         <div class="max-w-6xl mx-auto">
             <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-                <div class="text-sm text-gray-400">
-                    Common search terms: creative writing, writing prompts, storytelling, character development
+                <p class="text-gray-400">© 2025 Salt Broth. All rights reserved.</p>
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Terms</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Contact</a>
                 </div>
-                <a href="#" class="text-accent-purple hover:text-accent-purple/80 transition-colors">
-                    Back to top <i class="fas fa-arrow-up ml-2"></i>
-                </a>
             </div>
         </div>
     </footer>
