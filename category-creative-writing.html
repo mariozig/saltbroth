@@ -47,7 +47,13 @@
                     },
                     colors: {
                         accent: {
-                            purple: '#8B5CF6',  // Creative Writing
+                            purple: '#8B5CF6',      // Creative Writing (Main)
+                            stories: '#9333EA',     // Stories & Narratives (Rich Purple)
+                            poetry: '#C026D3',      // Poetry (Bright Fuchsia)
+                            scripts: '#4F46E5',     // Scripts (Vibrant Indigo)
+                            nonfiction: '#0D9488',  // Creative Nonfiction (Rich Teal)
+                            pink: '#EC4899',        // Visual Arts
+                            emerald: '#10B981'      // Educational
                         }
                     }
                 }
@@ -104,58 +110,58 @@
                 <h2 class="text-2xl font-bold mb-8 px-4">Featured Categories</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <!-- Stories & Narratives -->
-                    <div class="category-card glass rounded-3xl p-8 hover:bg-accent-purple/5 cursor-pointer group">
+                    <div class="category-card glass rounded-3xl p-8 hover:bg-accent-stories/5 cursor-pointer group">
                         <div class="flex items-center space-x-4 mb-6">
-                            <div class="w-12 h-12 rounded-xl bg-accent-purple/10 flex items-center justify-center">
-                                <i class="fas fa-book-open text-2xl text-accent-purple"></i>
+                            <div class="w-12 h-12 rounded-xl bg-accent-stories/10 flex items-center justify-center">
+                                <i class="fas fa-book-open text-2xl text-accent-stories"></i>
                             </div>
-                            <h3 class="text-2xl font-bold text-white group-hover:text-accent-purple transition-colors">Stories & Narratives</h3>
+                            <h2 class="text-2xl font-bold text-white group-hover:text-accent-stories transition-colors">Stories & Narratives</h2>
                         </div>
                         <p class="text-gray-400 mb-6">Craft compelling stories with rich characters and immersive worlds.</p>
                         <div class="space-y-3">
                             <div class="flex items-center text-sm text-gray-400">
-                                <span class="w-1.5 h-1.5 rounded-full bg-accent-purple/30 mr-3"></span>
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-stories/30 mr-3"></span>
                                 Short Stories
                             </div>
                             <div class="flex items-center text-sm text-gray-400">
-                                <span class="w-1.5 h-1.5 rounded-full bg-accent-purple/30 mr-3"></span>
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-stories/30 mr-3"></span>
                                 Character Development
                             </div>
                             <div class="flex items-center text-sm text-gray-400">
-                                <span class="w-1.5 h-1.5 rounded-full bg-accent-purple/30 mr-3"></span>
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-stories/30 mr-3"></span>
                                 Plot Generation
                             </div>
                         </div>
                         <div class="flex items-center justify-end mt-6">
-                            <span class="text-accent-purple border-b border-transparent group-hover:border-accent-purple pb-0.5">Explore prompts <i class="fas fa-arrow-right ml-2"></i></span>
+                            <span class="text-accent-stories border-b border-transparent group-hover:border-accent-stories pb-0.5">Explore prompts <i class="fas fa-arrow-right ml-2"></i></span>
                         </div>
                     </div>
 
                     <!-- Poetry -->
-                    <div class="category-card glass rounded-3xl p-8 hover:bg-accent-purple/5 cursor-pointer group">
+                    <div class="category-card glass rounded-3xl p-8 hover:bg-accent-poetry/5 cursor-pointer group">
                         <div class="flex items-center space-x-4 mb-6">
-                            <div class="w-12 h-12 rounded-xl bg-accent-purple/10 flex items-center justify-center">
-                                <i class="fas fa-feather-alt text-2xl text-accent-purple"></i>
+                            <div class="w-12 h-12 rounded-xl bg-accent-poetry/10 flex items-center justify-center">
+                                <i class="fas fa-feather-alt text-2xl text-accent-poetry"></i>
                             </div>
-                            <h3 class="text-2xl font-bold text-white group-hover:text-accent-purple transition-colors">Poetry</h3>
+                            <h2 class="text-2xl font-bold text-white group-hover:text-accent-poetry transition-colors">Poetry</h2>
                         </div>
                         <p class="text-gray-400 mb-6">Express yourself through various poetic forms and styles.</p>
                         <div class="space-y-3">
                             <div class="flex items-center text-sm text-gray-400">
-                                <span class="w-1.5 h-1.5 rounded-full bg-accent-purple/30 mr-3"></span>
-                                Traditional Forms
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-poetry/30 mr-3"></span>
+                                Free Verse
                             </div>
                             <div class="flex items-center text-sm text-gray-400">
-                                <span class="w-1.5 h-1.5 rounded-full bg-accent-purple/30 mr-3"></span>
-                                Modern Poetry
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-poetry/30 mr-3"></span>
+                                Structured Forms
                             </div>
                             <div class="flex items-center text-sm text-gray-400">
-                                <span class="w-1.5 h-1.5 rounded-full bg-accent-purple/30 mr-3"></span>
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-poetry/30 mr-3"></span>
                                 Experimental
                             </div>
                         </div>
                         <div class="flex items-center justify-end mt-6">
-                            <span class="text-accent-purple border-b border-transparent group-hover:border-accent-purple pb-0.5">Explore prompts <i class="fas fa-arrow-right ml-2"></i></span>
+                            <span class="text-accent-poetry border-b border-transparent group-hover:border-accent-poetry pb-0.5">Explore prompts <i class="fas fa-arrow-right ml-2"></i></span>
                         </div>
                     </div>
                 </div>
@@ -168,30 +174,58 @@
                 <h2 class="text-2xl font-bold mb-8 px-4">All Writing Categories</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Scripts -->
-                    <div class="category-card glass rounded-3xl p-8 hover:bg-accent-purple/5 cursor-pointer group">
+                    <div class="category-card glass rounded-3xl p-8 hover:bg-accent-scripts/5 cursor-pointer group">
                         <div class="flex items-center space-x-4 mb-6">
-                            <div class="w-12 h-12 rounded-xl bg-accent-purple/10 flex items-center justify-center">
-                                <i class="fas fa-film text-2xl text-accent-purple"></i>
+                            <div class="w-12 h-12 rounded-xl bg-accent-scripts/10 flex items-center justify-center">
+                                <i class="fas fa-film text-2xl text-accent-scripts"></i>
                             </div>
-                            <h3 class="text-2xl font-bold text-white group-hover:text-accent-purple transition-colors">Scripts</h3>
+                            <h2 class="text-2xl font-bold text-white group-hover:text-accent-scripts transition-colors">Scripts</h2>
                         </div>
                         <p class="text-gray-400 mb-6">Create engaging scripts for screen and stage productions.</p>
+                        <div class="space-y-3">
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-scripts/30 mr-3"></span>
+                                Screenplays
+                            </div>
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-scripts/30 mr-3"></span>
+                                Stage Plays
+                            </div>
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-scripts/30 mr-3"></span>
+                                Dialogue Writing
+                            </div>
+                        </div>
                         <div class="flex items-center justify-end mt-6">
-                            <span class="text-accent-purple border-b border-transparent group-hover:border-accent-purple pb-0.5">Explore prompts <i class="fas fa-arrow-right ml-2"></i></span>
+                            <span class="text-accent-scripts border-b border-transparent group-hover:border-accent-scripts pb-0.5">Explore prompts <i class="fas fa-arrow-right ml-2"></i></span>
                         </div>
                     </div>
 
                     <!-- Creative Nonfiction -->
-                    <div class="category-card glass rounded-3xl p-8 hover:bg-accent-purple/5 cursor-pointer group">
+                    <div class="category-card glass rounded-3xl p-8 hover:bg-accent-nonfiction/5 cursor-pointer group">
                         <div class="flex items-center space-x-4 mb-6">
-                            <div class="w-12 h-12 rounded-xl bg-accent-purple/10 flex items-center justify-center">
-                                <i class="fas fa-pen-fancy text-2xl text-accent-purple"></i>
+                            <div class="w-12 h-12 rounded-xl bg-accent-nonfiction/10 flex items-center justify-center">
+                                <i class="fas fa-pen-fancy text-2xl text-accent-nonfiction"></i>
                             </div>
-                            <h3 class="text-2xl font-bold text-white group-hover:text-accent-purple transition-colors">Creative Nonfiction</h3>
+                            <h2 class="text-2xl font-bold text-white group-hover:text-accent-nonfiction transition-colors">Creative Nonfiction</h2>
                         </div>
                         <p class="text-gray-400 mb-6">Transform real experiences into compelling narratives.</p>
+                        <div class="space-y-3">
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-nonfiction/30 mr-3"></span>
+                                Memoirs
+                            </div>
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-nonfiction/30 mr-3"></span>
+                                Personal Essays
+                            </div>
+                            <div class="flex items-center text-sm text-gray-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-nonfiction/30 mr-3"></span>
+                                Literary Journalism
+                            </div>
+                        </div>
                         <div class="flex items-center justify-end mt-6">
-                            <span class="text-accent-purple border-b border-transparent group-hover:border-accent-purple pb-0.5">Explore prompts <i class="fas fa-arrow-right ml-2"></i></span>
+                            <span class="text-accent-nonfiction border-b border-transparent group-hover:border-accent-nonfiction pb-0.5">Explore prompts <i class="fas fa-arrow-right ml-2"></i></span>
                         </div>
                     </div>
                 </div>
@@ -209,10 +243,7 @@
                             <div class="w-12 h-12 rounded-xl bg-accent-pink/10 flex items-center justify-center">
                                 <i class="fas fa-paint-brush text-2xl text-accent-pink"></i>
                             </div>
-                            <div>
-                                <h3 class="text-2xl font-bold text-white group-hover:text-accent-pink transition-colors">Visual Arts</h3>
-                                <p class="text-gray-400">Enhance your writing with visual elements</p>
-                            </div>
+                            <h2 class="text-2xl font-bold text-white group-hover:text-accent-pink transition-colors">Visual Arts</h2>
                         </div>
                     </a>
 
@@ -222,10 +253,7 @@
                             <div class="w-12 h-12 rounded-xl bg-accent-emerald/10 flex items-center justify-center">
                                 <i class="fas fa-graduation-cap text-2xl text-accent-emerald"></i>
                             </div>
-                            <div>
-                                <h3 class="text-2xl font-bold text-white group-hover:text-accent-emerald transition-colors">Educational</h3>
-                                <p class="text-gray-400">Create educational writing content</p>
-                            </div>
+                            <h2 class="text-2xl font-bold text-white group-hover:text-accent-emerald transition-colors">Educational</h2>
                         </div>
                     </a>
                 </div>
@@ -237,26 +265,32 @@
             <div class="max-w-7xl mx-auto">
                 <h2 class="text-2xl font-bold mb-8 px-4">Common Use Cases</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="glass rounded-2xl p-6">
-                        <div class="w-12 h-12 rounded-xl bg-accent-purple/10 flex items-center justify-center mb-4">
-                            <i class="fas fa-pencil-alt text-xl text-accent-purple"></i>
+                    <div class="category-card glass rounded-2xl p-6 hover:bg-accent-stories/5 cursor-pointer group">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="w-10 h-10 rounded-xl bg-accent-stories/10 flex items-center justify-center">
+                                <i class="fas fa-pencil-alt text-xl text-accent-stories"></i>
+                            </div>
+                            <h2 class="text-lg font-semibold text-white group-hover:text-accent-stories transition-colors">Story Development</h2>
                         </div>
-                        <h3 class="text-lg font-semibold mb-2">Developing Projects</h3>
-                        <p class="text-gray-400">Start and develop creative writing projects from scratch</p>
+                        <p class="text-sm text-gray-400">Create engaging plots and develop compelling characters</p>
                     </div>
-                    <div class="glass rounded-2xl p-6">
-                        <div class="w-12 h-12 rounded-xl bg-accent-purple/10 flex items-center justify-center mb-4">
-                            <i class="fas fa-random text-xl text-accent-purple"></i>
+                    <div class="category-card glass rounded-2xl p-6 hover:bg-accent-poetry/5 cursor-pointer group">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="w-10 h-10 rounded-xl bg-accent-poetry/10 flex items-center justify-center">
+                                <i class="fas fa-magic text-xl text-accent-poetry"></i>
+                            </div>
+                            <h2 class="text-lg font-semibold text-white group-hover:text-accent-poetry transition-colors">Creative Exercises</h2>
                         </div>
-                        <h3 class="text-lg font-semibold mb-2">Exploring Styles</h3>
-                        <p class="text-gray-400">Experiment with different writing styles and genres</p>
+                        <p class="text-sm text-gray-400">Overcome writer's block and spark new ideas</p>
                     </div>
-                    <div class="glass rounded-2xl p-6">
-                        <div class="w-12 h-12 rounded-xl bg-accent-purple/10 flex items-center justify-center mb-4">
-                            <i class="fas fa-book text-xl text-accent-purple"></i>
+                    <div class="category-card glass rounded-2xl p-6 hover:bg-accent-scripts/5 cursor-pointer group">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="w-10 h-10 rounded-xl bg-accent-scripts/10 flex items-center justify-center">
+                                <i class="fas fa-edit text-xl text-accent-scripts"></i>
+                            </div>
+                            <h2 class="text-lg font-semibold text-white group-hover:text-accent-scripts transition-colors">Writing Refinement</h2>
                         </div>
-                        <h3 class="text-lg font-semibold mb-2">Creating Content</h3>
-                        <p class="text-gray-400">Generate engaging narrative content for various purposes</p>
+                        <p class="text-sm text-gray-400">Polish your writing style and improve clarity</p>
                     </div>
                 </div>
             </div>
