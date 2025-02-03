@@ -197,9 +197,27 @@
                         </div>
 
                         <!-- Prompt Body -->
-                        <div class="glass rounded-3xl p-8">
-                            <h2 class="text-2xl font-bold mb-6">Prompt Body</h2>
-                            <div class="glass bg-white/5 rounded-2xl p-6">
+                        <div class="glass rounded-3xl p-8 border-2 border-accent-400 relative">
+                            <!-- Special Badge -->
+                            <div class="absolute -top-4 left-8 bg-accent-400 text-white px-4 py-1 rounded-full text-sm font-medium flex items-center gap-2">
+                                <i class="fas fa-star"></i>
+                                <span>Premium Prompt</span>
+                            </div>
+                            
+                            <div class="flex items-center gap-4 mb-6">
+                                <h2 class="text-2xl font-bold bg-gradient-to-r from-accent-400 to-accent-500 text-transparent bg-clip-text">Prompt Body</h2>
+                                <div class="flex-1 h-px bg-gradient-to-r from-accent-400/50 to-transparent"></div>
+                            </div>
+
+                            <p class="text-gray-400 mb-6">This carefully crafted prompt consistently generates professional, well-structured follow-up emails. Copy and customize it for your needs:</p>
+
+                            <div class="glass bg-white/5 rounded-2xl p-6 border border-accent-400/20">
+                                <!-- Copy Button -->
+                                <button class="absolute top-4 right-4 bg-accent-400/10 hover:bg-accent-400/20 text-accent-400 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors flex items-center gap-2">
+                                    <i class="fas fa-copy"></i>
+                                    <span>Copy Prompt</span>
+                                </button>
+
                                 <pre class="whitespace-pre-wrap text-gray-400">Generate a professional follow-up email for a Q1 Performance Review meeting with the following details:
 
 Meeting Date: March 1, 2024
@@ -228,6 +246,24 @@ Additional Notes:
 - Include all key discussion points
 - List action items with owners and deadlines
 - Mention the next meeting date</pre>
+                            </div>
+
+                            <!-- Key Features -->
+                            <div class="mt-6 grid grid-cols-2 gap-4">
+                                <div class="glass bg-white/5 rounded-xl p-4 border border-accent-400/10">
+                                    <div class="flex items-center gap-2 text-accent-400 mb-2">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span class="font-medium">Tested Structure</span>
+                                    </div>
+                                    <p class="text-sm text-gray-400">Organized format that ensures all key meeting information is captured</p>
+                                </div>
+                                <div class="glass bg-white/5 rounded-xl p-4 border border-accent-400/10">
+                                    <div class="flex items-center gap-2 text-accent-400 mb-2">
+                                        <i class="fas fa-magic"></i>
+                                        <span class="font-medium">AI Optimized</span>
+                                    </div>
+                                    <p class="text-sm text-gray-400">Engineered for consistent, high-quality outputs across different AI models</p>
+                                </div>
                             </div>
                         </div>
 
@@ -470,6 +506,26 @@ Cheers,
                                     const panelId = tab.getAttribute('aria-controls');
                                     document.getElementById(panelId).classList.remove('hidden');
                                 });
+                            });
+                        </script>
+
+                        <script>
+                            // Copy prompt functionality
+                            document.querySelector('.glass button').addEventListener('click', async () => {
+                                const promptText = document.querySelector('.glass pre').textContent;
+                                try {
+                                    await navigator.clipboard.writeText(promptText);
+                                    const button = document.querySelector('.glass button');
+                                    const originalHTML = button.innerHTML;
+                                    button.innerHTML = '<i class="fas fa-check"></i><span>Copied!</span>';
+                                    button.classList.add('bg-green-500/10', 'text-green-500');
+                                    setTimeout(() => {
+                                        button.innerHTML = originalHTML;
+                                        button.classList.remove('bg-green-500/10', 'text-green-500');
+                                    }, 2000);
+                                } catch (err) {
+                                    console.error('Failed to copy text: ', err);
+                                }
                             });
                         </script>
                     </div>
