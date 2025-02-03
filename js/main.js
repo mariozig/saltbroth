@@ -1,9 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
+    console.log('DOM Content Loaded');
+    
     // Initialize tab system if present
     const tabs = document.querySelectorAll('.tab-btn');
     const contents = document.querySelectorAll('.tab-content');
     
     if (tabs.length > 0 && contents.length > 0) {
+        console.log('Tabs initialized');
         tabs.forEach((tab, index) => {
             tab.addEventListener('click', () => {
                 // Remove active classes
@@ -24,18 +27,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // FAQ Accordion
     const faqButtons = document.querySelectorAll('.faq-button');
+    console.log('Found FAQ buttons:', faqButtons.length);
     
     faqButtons.forEach(button => {
-        button.addEventListener('click', () => {
+        console.log('Adding click listener to button:', button.textContent.trim());
+        button.addEventListener('click', (e) => {
+            console.log('FAQ button clicked');
             const content = button.nextElementSibling;
             const icon = button.querySelector('i');
             
             // Toggle content visibility
             content.classList.toggle('hidden');
+            console.log('Toggled content visibility');
             
             // Toggle icon
             icon.classList.toggle('fa-plus');
             icon.classList.toggle('fa-minus');
+            console.log('Toggled icon');
             
             // Close other open items
             faqButtons.forEach(otherButton => {
