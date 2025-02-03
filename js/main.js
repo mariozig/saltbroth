@@ -8,14 +8,14 @@ document.addEventListener('DOMContentLoaded', () => {
             tab.addEventListener('click', () => {
                 // Remove active classes
                 tabs.forEach(t => {
-                    t.classList.remove('active', 'border-accent-purple', 'text-accent-purple');
+                    t.classList.remove('active', 'border-accent-100', 'text-accent-100');
                     t.classList.add('border-transparent', 'text-gray-400');
                 });
                 
                 contents.forEach(c => c.classList.add('hidden'));
                 
                 // Add active classes
-                tab.classList.add('active', 'border-accent-purple', 'text-accent-purple');
+                tab.classList.add('active', 'border-accent-100', 'text-accent-100');
                 tab.classList.remove('border-transparent', 'text-gray-400');
                 contents[index].classList.remove('hidden');
             });
