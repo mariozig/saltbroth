@@ -36,16 +36,14 @@
     <main class="pt-24 min-h-screen">
         <!-- Breadcrumb -->
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-            <nav class="flex space-x-2 text-base font-medium text-gray-400">
+            <nav class="flex items-center space-x-2 text-base font-medium text-gray-500">
                 <a href="/prompt-collections" class="hover:text-white transition-colors">Prompt Collections</a>
-                <span>/</span>
+                <span class="text-gray-500">/</span>
                 <a href="/category-business.html" class="hover:text-white transition-colors">Business</a>
-                <span>/</span>
+                <span class="text-gray-500">/</span>
                 <a href="/category-business-professional-content.html" class="hover:text-white transition-colors">Professional Content</a>
-                <span>/</span>
+                <span class="text-gray-500">/</span>
                 <a href="/category-email-templates.html" class="hover:text-white transition-colors">Email Templates</a>
-                <span>/</span>
-                <span class="text-white">Meeting Follow-Up</span>
             </nav>
         </div>
 
@@ -597,5 +595,21 @@ Cheers,
             </div>
         </div>
     </footer>
+
+    <script>
+        const dropdownButton = document.getElementById('dropdownButton');
+        const dropdownMenu = document.getElementById('dropdownMenu');
+
+        dropdownButton.addEventListener('click', () => {
+            dropdownMenu.classList.toggle('hidden');
+        });
+
+        // Close dropdown when clicking outside
+        window.addEventListener('click', (event) => {
+            if (!dropdownButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                dropdownMenu.classList.add('hidden');
+            }
+        });
+    </script>
 </body>
 </html>
