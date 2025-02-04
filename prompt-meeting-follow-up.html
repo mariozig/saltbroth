@@ -17,6 +17,7 @@
     <link href="css/styles.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="js/tailwind.config.js"></script>
+    <script src="js/main.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body class="bg-black text-white">
@@ -273,18 +274,65 @@ Additional Notes:
                             <p class="text-gray-400 mb-8">Compare how different AI models handle the same meeting follow-up scenario:</p>
                             
                             <!-- LLM Tabs -->
-                            <div class="flex flex-wrap gap-2 mb-6" role="tablist" aria-label="LLM outputs">
-                                <button class="px-4 py-2 rounded-xl bg-accent-400 text-white font-medium" role="tab" aria-selected="true" aria-controls="tab-chatgpt">
-                                    <i class="fas fa-robot mr-2"></i>ChatGPT
-                                </button>
-                                <button class="px-4 py-2 rounded-xl bg-white/5 hover:bg-white/10 text-gray-400 font-medium transition-colors" role="tab" aria-selected="false" aria-controls="tab-claude">
-                                    <i class="fas fa-robot mr-2"></i>Claude
-                                </button>
-                                <button class="px-4 py-2 rounded-xl bg-white/5 hover:bg-white/10 text-gray-400 font-medium transition-colors" role="tab" aria-selected="false" aria-controls="tab-llama">
-                                    <i class="fas fa-robot mr-2"></i>Llama
-                                </button>
-                            </div>
+                            <div class="mb-6">
+                                <!-- Tab Container with Bottom Border -->
+                                <div class="border-b border-white/10 flex gap-1" role="tablist" aria-label="LLM outputs">
+                                    <!-- ChatGPT Tab -->
+                                    <button class="tab-btn px-6 py-3 rounded-t-xl bg-white/20 text-white font-medium transition-colors relative" 
+                                            role="tab" 
+                                            aria-selected="true" 
+                                            aria-controls="tab-chatgpt" 
+                                            data-color="#10a37f">
+                                        <div class="absolute bottom-0 left-0 right-0 h-0.5 bg-[#10a37f] transform translate-y-0.5"></div>
+                                        <div class="flex items-center gap-2">
+                                            <div class="w-8 h-8 rounded-lg bg-[#10a37f]/10 flex items-center justify-center">
+                                                <i class="fas fa-robot text-[#10a37f]"></i>
+                                            </div>
+                                            <div class="flex flex-col items-start">
+                                                <span>ChatGPT</span>
+                                                <span class="text-xs opacity-75">GPT-4</span>
+                                            </div>
+                                        </div>
+                                    </button>
 
+                                    <!-- Claude Tab -->
+                                    <button class="tab-btn px-6 py-3 rounded-t-xl bg-white/5 text-gray-400 hover:text-white font-medium transition-colors relative group" 
+                                            role="tab" 
+                                            aria-selected="false" 
+                                            aria-controls="tab-claude" 
+                                            data-color="#6f42c1">
+                                        <div class="absolute bottom-0 left-0 right-0 h-0.5 bg-[#6f42c1] transform translate-y-0.5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                                        <div class="flex items-center gap-2">
+                                            <div class="w-8 h-8 rounded-lg bg-[#6f42c1]/10 flex items-center justify-center">
+                                                <i class="fas fa-robot text-[#6f42c1]"></i>
+                                            </div>
+                                            <div class="flex flex-col items-start">
+                                                <span>Claude</span>
+                                                <span class="text-xs opacity-75">2.1</span>
+                                            </div>
+                                        </div>
+                                    </button>
+
+                                    <!-- Llama Tab -->
+                                    <button class="tab-btn px-6 py-3 rounded-t-xl bg-white/5 text-gray-400 hover:text-white font-medium transition-colors relative group" 
+                                            role="tab" 
+                                            aria-selected="false" 
+                                            aria-controls="tab-llama" 
+                                            data-color="#792EE5">
+                                        <div class="absolute bottom-0 left-0 right-0 h-0.5 bg-[#792EE5] transform translate-y-0.5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                                        <div class="flex items-center gap-2">
+                                            <div class="w-8 h-8 rounded-lg bg-[#792EE5]/10 flex items-center justify-center">
+                                                <i class="fas fa-robot text-[#792EE5]"></i>
+                                            </div>
+                                            <div class="flex flex-col items-start">
+                                                <span>Llama</span>
+                                                <span class="text-xs opacity-75">2 70B</span>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                            
                             <!-- Output Panels -->
                             <div class="space-y-4">
                                 <!-- ChatGPT Output -->
@@ -298,10 +346,6 @@ Additional Notes:
                                                 <div class="font-medium">ChatGPT Output</div>
                                                 <div class="text-sm text-gray-400">GPT-4 Model</div>
                                             </div>
-                                        </div>
-                                        <div class="flex items-center gap-2">
-                                            <span class="text-sm text-gray-400">Response time: ~3s</span>
-                                            <div class="w-2 h-2 rounded-full bg-[#10a37f]"></div>
                                         </div>
                                     </div>
                                     <div class="p-6 font-mono text-sm">
@@ -345,10 +389,6 @@ Best regards,
                                                 <div class="font-medium">Claude Output</div>
                                                 <div class="text-sm text-gray-400">Claude 2.1</div>
                                             </div>
-                                        </div>
-                                        <div class="flex items-center gap-2">
-                                            <span class="text-sm text-gray-400">Response time: ~2.8s</span>
-                                            <div class="w-2 h-2 rounded-full bg-[#6f42c1]"></div>
                                         </div>
                                     </div>
                                     <div class="p-6 font-mono text-sm">
@@ -417,10 +457,6 @@ Best regards,
                                                 <div class="text-sm text-gray-400">Llama 2 70B</div>
                                             </div>
                                         </div>
-                                        <div class="flex items-center gap-2">
-                                            <span class="text-sm text-gray-400">Response time: ~4.2s</span>
-                                            <div class="w-2 h-2 rounded-full bg-[#792EE5]"></div>
-                                        </div>
                                     </div>
                                     <div class="p-6 font-mono text-sm">
                                         <pre class="whitespace-pre-wrap text-gray-400">RE: Q1 Performance Review Meeting - Summary & Next Steps
@@ -481,53 +517,6 @@ Cheers,
                             </div>
                         </div>
 
-                        <script>
-                            // Tab switching functionality
-                            document.querySelectorAll('[role="tab"]').forEach(tab => {
-                                tab.addEventListener('click', () => {
-                                    // Remove active states
-                                    document.querySelectorAll('[role="tab"]').forEach(t => {
-                                        t.setAttribute('aria-selected', 'false');
-                                        t.classList.remove('bg-accent-400', 'text-white');
-                                        t.classList.add('bg-white/5', 'text-gray-400');
-                                    });
-                                    
-                                    // Set active tab
-                                    tab.setAttribute('aria-selected', 'true');
-                                    tab.classList.remove('bg-white/5', 'text-gray-400');
-                                    tab.classList.add('bg-accent-400', 'text-white');
-                                    
-                                    // Hide all panels
-                                    document.querySelectorAll('[role="tabpanel"]').forEach(panel => {
-                                        panel.classList.add('hidden');
-                                    });
-                                    
-                                    // Show selected panel
-                                    const panelId = tab.getAttribute('aria-controls');
-                                    document.getElementById(panelId).classList.remove('hidden');
-                                });
-                            });
-                        </script>
-
-                        <script>
-                            // Copy prompt functionality
-                            document.querySelector('.glass button').addEventListener('click', async () => {
-                                const promptText = document.querySelector('.glass pre').textContent;
-                                try {
-                                    await navigator.clipboard.writeText(promptText);
-                                    const button = document.querySelector('.glass button');
-                                    const originalHTML = button.innerHTML;
-                                    button.innerHTML = '<i class="fas fa-check"></i><span>Copied!</span>';
-                                    button.classList.add('bg-green-500/10', 'text-green-500');
-                                    setTimeout(() => {
-                                        button.innerHTML = originalHTML;
-                                        button.classList.remove('bg-green-500/10', 'text-green-500');
-                                    }, 2000);
-                                } catch (err) {
-                                    console.error('Failed to copy text: ', err);
-                                }
-                            });
-                        </script>
                     </div>
 
                     <!-- Right Column (1/3) -->

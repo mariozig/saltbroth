@@ -116,4 +116,10 @@
    4. Utilities
    ================================= */
 
+.tab-btn.active {
+    border-bottom: 2px solid currentColor;
+    text-decoration: underline;
+    text-decoration-color: #8B5CF6;
+}
+
 /* No utility classes defined */
